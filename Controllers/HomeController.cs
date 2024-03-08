@@ -15,6 +15,12 @@ namespace _2TDSPK.Controllers
 
         public IActionResult Index()
         {
+            Aluno aluno = new ("Thiago","thiago@keller.com");
+            aluno.Logar();
+
+            Professor professor = new Professor("Thiago", "teste");
+            professor.Logar();
+
             return View();
         }
 
